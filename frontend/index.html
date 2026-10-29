@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Pet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>House Pet 🐾🏡</h1>
+        <p>Para você, um novo amigo. Para ele, uma nova vida.</p>
+    </header>
+
+    <main class="container">
+    
+    <section class="card-form">
+      <h2>Cadastrar Novo Pet</h2>
+      <form id="pet-form">
+        <div class="form-group">
+          <label for="name">Nome do Pet:</label>
+          <input type="text" id="name" required placeholder="Ex: Thor">
+        </div>
+
+        <div class="form-group">
+          <label for="imageUrl">URL da Foto do Pet:</label>
+          <input type="url" id="imageUrl" placeholder="https://exemplo.com/foto.jpg">
+        </div>
+
+        <div class="form-group">
+          <label for="species">Espécie:</label>
+          <input type="text" id="species" required placeholder="Ex: Cachorro, Gato...">
+        </div>
+
+        <div class="form-group">
+          <label for="ageYears">Idade (anos):</label>
+          <input type="number" id="ageYears" required min="0" placeholder="Ex: 3">
+        </div>
+
+        <button type="submit" id="btn-submit">Salvar Pet 🐶</button>
+      </form>
+    </section>
+
+    
+    <section class="pets-section">
+      <h2>Pets Cadastrados</h2>
+      <div id="pets-list" class="pets-grid">
+        
+      </div>
+    </section>
+  </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
